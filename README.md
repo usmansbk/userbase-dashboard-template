@@ -13,7 +13,7 @@ Userbase Admin dashboard template
 ## Tools
 
 - [Next.js](https://nextjs.org/docs)
-- [MUI (Joy UI)](https://mui.com/joy-ui/getting-started/)
+- [MUI](https://mui.com/material-ui/getting-started/)
 
 ## Getting Started
 
