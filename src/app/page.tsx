@@ -10,7 +10,7 @@ export default function Login() {
   return (
     <Box display="flex" flex={1} justifyContent="center" alignItems="center">
       <Container maxWidth="sm">
-        <Box textAlign="center">
+        <Box textAlign="center" component="form">
           <Typography
             color={grey["700"]}
             fontWeight={700}
@@ -22,18 +22,22 @@ export default function Login() {
         </Box>
         <Stack p={2} spacing={2}>
           <TextField
+            id="email"
+            name="email"
             type="email"
             autoComplete="email"
             label="Email"
             size="small"
           />
           <TextField
+            id="password"
+            name="password"
             type="password"
             autoComplete="new-password"
             label="Password"
             size="small"
           />
-          <Button variant="contained" disableElevation>
+          <Button type="submit" variant="contained" disableElevation>
             Log in
           </Button>
         </Stack>
