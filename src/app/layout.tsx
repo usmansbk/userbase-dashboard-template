@@ -10,8 +10,10 @@ const font = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Userbase Admin",
-  description: "Userbase Admin Panel",
+  title: {
+    default: "Userbase Admin",
+    template: "%s | Userbase Admin",
+  },
 };
 
 export default function RootLayout({

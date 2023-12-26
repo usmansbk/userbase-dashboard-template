@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 
 export const metadata: Metadata = {
-  title: "%s | Dashboard",
+  title: "Dashboard",
   description: "Userbase Admin Dashboard",
 };
 

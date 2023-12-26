@@ -22,6 +22,7 @@ export default function Login() {
         </Box>
         <Stack p={2} spacing={2}>
           <TextField
+            autoFocus
             id="email"
             name="email"
             type="email"
