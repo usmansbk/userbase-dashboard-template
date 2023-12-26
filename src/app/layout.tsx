@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { CssBaseline } from "@mui/material";
+import { CssBaseline, Box } from "@mui/material";
+import grey from "@mui/material/colors/grey";
 
 const font = Roboto({
   subsets: ["latin"],
@@ -9,8 +10,8 @@ const font = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Userbase Dashboard",
-  description: "Userbase dashboard template",
+  title: "Userbase Admin",
+  description: "Userbase Admin Panel",
 };
 
 export default function RootLayout({
@@ -23,7 +24,16 @@ export default function RootLayout({
       <body className={font.className}>
         <AppRouterCacheProvider>
           <CssBaseline />
-          {children}
+          <Box
+            display="flex"
+            flex={1}
+            flexDirection="column"
+            minHeight="100vh"
+            minWidth="100vw"
+            bgcolor={grey["100"]}
+          >
+            {children}
+          </Box>
         </AppRouterCacheProvider>
       </body>
     </html>
