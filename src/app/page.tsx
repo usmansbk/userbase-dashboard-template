@@ -1,7 +1,11 @@
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+
 export default function Home() {
   return (
     <main>
-      <h1>Userbase</h1>
+      <Typography>Userbase</Typography>
+      <Button>Click Me</Button>
     </main>
   );
 }
